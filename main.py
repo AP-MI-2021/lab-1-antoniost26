@@ -2,7 +2,6 @@
 Returneaza true daca n este prim si false daca nu.
 '''
 def is_prime(n):
-  flag = False
   if n > 1:
     for i in range(2, n):
       if n % i == 0:
