@@ -6,12 +6,8 @@ def is_prime(n):
   if n > 1:
     for i in range(2, n):
       if n % i == 0:
-        flag = True
-        break
-  if flag == False:
+        return False
     return True
-  else:
-    return False
 
   
   
@@ -55,7 +51,7 @@ def get_cmmdc_v2(x, y):
   
 def main():
   lst = 1, 3, 6, 8
-  print(is_prime(6), get_product(lst), get_cmmdc_v1(6, 30), get_cmmdc_v2(6, 30))
+  print(is_prime(7), get_product(lst), get_cmmdc_v1(6, 30), get_cmmdc_v2(6, 30))
 
 if __name__ == '__main__':
   main()
